@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дмитрий Кравчук](https://up.htmlacademy.ru/htmlcss/20/user/461429).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Варганов](https://htmlacademy.ru/profile/varganov_d).
 
 ---
 
