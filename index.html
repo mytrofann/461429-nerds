@@ -1,107 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Nerd's</title>
-</head>
-<body>
-  <header class="main-header">
-    <div class="container">
-	  <nav class="main-navigation">
-	    <ul>
-		  <li>
-		    <a href="#">Студия</a>
-		  </li>
-		  <li>
-		    <a href="#">Клиенты</a>
-		  </li>
-		  <li>
-		    <a href="#">Магазин</a>
-		  </li>
-		  <li>
-		    <a href="#">Контакты</a>
-		  </li>
-		</ul>
-	  </nav>
-	</div>
-	<div class="basket-block">
-	  <a class="basket" href="#">Корзина</a>
-	</div>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <title>Nerd's</title>
+  </head>
+  <body>
+    <header class="main-header">
+			<a class="main-header-logo">
+				<img src="img/index-logo.png" width="368" height="204" alt="Nerd's">
+			</a>
+	    <nav class="main-navigation">
+	      <ul class="site-navigation">
+		      <li><a href="studio.html">Студия</a></li>
+		      <li><a href="clients.html">Клиенты</a></li>
+		      <li><a href="shop.html">Магазин</a></li>
+		      <li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="basket-block">
+					<li><a class="basket" href="#">Корзина</a></li>
+				</ul>
+			</nav>
+			<div class="slider">
+				<div class="slider-item">
+					<b class="slider-name">Долго, дорого, скурпулезно.</b>
+					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a class="button" href="web_sites.html">Узнать больше</a>
+				</div>
+			</div>
+    </header>
   <main class="container">
-    <div class="index-logo">
-      <img src="img/index-logo.png" width="368" height="204" alt="Nerd's">
-    </div>
-	<div class="slider">
-	  <div class="slider-item">
-	    <b class="slider-name">Долго, дорого, скурпулезно.</b>
-		  <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-	    <a class="btn" href="#">Узнать больше</a>
-	  </div>
-	</div>
-	<div class="services">
-	  <div class="services-item">.
-	    <img src="#" alt="">
-		  <h2 class="services-name">Веб-сайты</h2>
-		  <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-		  <a class="btn" href="#">Заказать</a>
-	  </div>
-	  <div class="services-item">.
-	    <img src="#" alt="">
-		  <h2 class="services-name">Приложения</h2>
-		  <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-		  <a class="btn" href="#">Заказать</a>
-	  </div>
-	  <div class="services-item">.
-	    <img src="#" alt="">
-		  <h2 class="services-name">Презентации</h2>
-		  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-		  <a class="btn" href="#">Заказать</a>
-	  </div>
-	</div>
-	<div class="about">
-	  <div class="about-item">
-	    <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+		<h1 class="visually-hidden">Nerd's</h1>
+
+		<section class="services">
+			<h2 class="visually-hidden">Преимущества</h2>
+			<ul class="services-list">
+				<li class="services-item">
+				  <img src="web_sites.jpg" alt="Веб-сайты">
+				  <h2 class="services-name">Веб-сайты</h2>
+				  <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="button" href="web_sites.html">Заказать</a>
+				</li>
+			  <li class="services-item">.
+			  	<img src="apps.jpg" alt="Приложения">
+				  <h2 class="services-name">Приложения</h2>
+			  	<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+			  	<a class="button" href="apps.html">Заказать</a>
+				</li>
+			  <li class="services-item">.
+				  <img src="presentations.jpg" alt="Презентации">
+				  <h2 class="services-name">Презентации</h2>
+				  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+				  <a class="button" href="presentations.html">Заказать</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="abouth">
+			<h2 class="visually-hidden">О нас</h2>
+			<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
 		  <p>Исповедуем принципи минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 		  <p class="list-name">Выполняем заказы на разработку:</p>
-		<ul>
-		  <li>Веб-сайтов любой сложности</li>
-		  <li>Мобильных приложений для iOS и Android</li>
-		  <li>Слайдшоу и видео для корпоративных презентаций</li>
-		</ul>
-	  </div>
-	  <div class="about-statistics">
-	    <img src="#" alt="">
-		  <p	class="list-name">С 2004 года любим точность во всем:</p>
-		<ul>
-		  <li>Уровень<br> самоотдачи</li>
-		  <li>Соблюдение<br> сроков</li>
-		  <li>Минимальная<br> предоплата</li>
-		</ul>
-	  </div>
-	  <div class="about-freands">
-	  </div>
-	</div>
-	<div class="index-content">
-	  <p>Nerd's design studio<br>
-		191186, Санк-Петербург,<br>
-		ул. Б. Конюшенная, д. 19/8<br>
-		тел. +7 (812) 275-75-75<br></p>
-		<a class="btn" href="#">Напишите нам</a>
-	</div>
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-	  <section class="footer-social">
-	    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-		  <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-		  <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
-	  </section>
-	  <section class="footer-partners">
-	    <b class="partners-name">Давайте дружить, это выгодно!</b>
-		  <p>Скидка 10% для друзей из социальных сетей.</p>
-	  </section>
-	</div>
-  </footer>
-</body>
+		  <ul>
+		    <li>Веб-сайтов любой сложности</li>
+		    <li>Мобильных приложений для iOS и Android</li>
+		    <li>Слайдшоу и видео для корпоративных презентаций</li>
+			</ul>
+		</section>
+
+		<section class="about-statistics">
+			<h2 class="visually-hidden">Наша статистика</h2>
+			<img src="#" alt="">
+			<p	class="list-name">С 2004 года любим точность во всем:</p>
+			<table>
+				<tr>
+				  <th>146%</th>
+				  <th>100%</th>
+					<th>50%</th>
+				</tr>
+				<tr>
+			  	<td>Уровень самоотдачи</td>
+				  <td>Соблюдение сроков</td>
+					<td>Минимальная предоплата</td>
+				</tr>
+			</table>
+		</section>
+
+		<section class="clients">
+			<h2 class="visually-hidden">Наши клиенты</h2>
+			<ul class="clients-list">
+				<li class="clients-item"><a href="clients.html"><img src="htmlacademy.jpg" alt="HTMLAcademy"></a></li>
+				<li class="clients-item"><a href="clients.html"><img src="borodinski.jpg" alt="Borodinsky"></a></li>
+				<li class="clients-item"><a href="clients.html"><img src="pink.jpg" alt="Pink"></a></li>
+				<li class="clients-item"><a href="clients.html"><img src="mishka.jpg" alt="Mishka"></a></li>
+			</ul>
+		</section>
+
+		<section class="contacts">
+			<h2 class="visually-hidden">Контактная информация</h2>
+			<p>Nerd's design studio<br>
+				191186, Санк-Петербург,<br>
+				ул. Б. Конюшенная, д. 19/8<br>
+				тел. +7 (812) 275-75-75
+			</p>
+			<a class="button" href="contacts.html">Напишите нам</a>
+		</section>
+	</main>
+    <footer class="main-footer">
+	  	<div class="footer-social">
+				<ul>
+					<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+			    <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+		    	<li><a class="social-btn social-btn-inst" href="#">Инстаграмм</a></li>
+			</div>
+		  <div class="footer-partners">
+		  	<b class="partners-name">Давайте дружить, это выгодно!</b>
+		  	<p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+	  </footer>
+	</body>
 </html>
