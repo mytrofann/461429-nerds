@@ -1,158 +1,149 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Catalog - Nerd's</title>
-</head>
-<body>
-  <header class="main-header">
-    <div class="container">
-	  <nav class="main-navigation">
-	    <ul>
-		  <li>
-		    <a class="#">Студия</a>
-		  </li>
-		  <li>
-		    <a class="#">Клиенты</a>
-		  </li>
-		  <li>
-		    <a class="#">Магазин</a>
-		  </li>
-		  <li>
-		    <a class="#">Контакты</a>
-		  </li>
-		</ul>
-	  </nav>
-	</div>
-	<div class="basket-block">
-	  <a class="basket" href="#">Корзина</a>
-	</div>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <title>Nerd's</title>
+  </head>
+  <body>
+    <header class="main-header">
+			<a class="main-header-logo">
+				<img src="img/index-logo.png" width="368" height="204" alt="Nerd's">
+			</a>
+	    <nav class="main-navigation">
+	      <ul class="site-navigation">
+		      <li><a href="studio.html">Студия</a></li>
+		      <li><a href="clients.html">Клиенты</a></li>
+		      <li><a href="shop.html">Магазин</a></li>
+		      <li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="basket-block">
+					<li><a class="basket" href="#">Корзина</a></li>
+				</ul>
+			</nav>
+    </header>
   <main class="container">
-    <div class="frame-title">
-	  <h1 class="title">Магазин готовых шаблонов</h1>
-	</div>
-	<form class="filtr" method="post">
-	  <legend>Сортировка:</legend>
-	    <p>
-		  <input type="text" name="price" value="price-min">
-		  <input type="text" name="price" value="price-max">
-		</p>
-	  <legend>Сетка:</legend>
-	    <p>
-		  <ul>
-		    <li>
-			  <input type="radio" name="price" value="price-min">
-			  <label>Адаптивная</label>
-			</li>
-		    <li>
-			  <input type="radio" name="price" value="price-max">
-			  <label>Фиксированная</label>
-			</li>
-		    <li>
-			  <input type="radio" name="price" value="price-max">
-		  <label>Резиновая</label>
-			</li>
-		  </ul>
-		</p>
-      <legend>Особенности</legend>	
-        <p>
-		  <ul>
-		    <li>
-			  <input type="checkbox" name="features" value="Слайдер">
-			  <label>Слайдер</label>
-			</li>
-		    <li>
-			  <input type="checkbox" name="features" value="Блок преимуществ">
-			  <label>Блок преимуществ</label>
-			</li>
-		    <li>
-			  <input type="checkbox" name="features" value="Новости">
-			  <label>Новости</label>
-			</li>
-		    <li>
-			  <input type="checkbox" name="features" value="Галерея">
-			  <label>Галерея</label>
-			</li>
-		    <li>
-			  <input type="checkbox" name="features" value="Корзина">
-			  <label>Корзина</label>
-			</li>
-		  </ul>
-        </p>
-        <a href="#">Показать</a>		
-	</form>
-	<form class="sorting" method="post">
-	  <legend>Сортировать:</legend>
-	    <p>
-  	      <a href="#">По цене</a>
-		  <a href="#">По типу</a>
-		  <a href="#">По названию</a>
-		  <a href="#"></a>
-		  <a href="#"></a>
-		</p>
-	</form>
-	<div class="cards-item">
-	  <div class="card">
-	    <img src="img/img-sedona.jpg" weight="360" height="576" alt="img-sedona">
-		<h1 class="title"><a href="#">Sedona</a></h1>
-		<p class="description">Информационный сайт для туристов</p>
-		<p class="price">9900 <span class="">РУБ.</span></p>
-	  </div>
-	  <div class="card">
-	    <img src="img/img-pink.jpg" weight="360" height="576" alt="img-pink">
-		<h1 class="title"><a href="#">Pink</a></h1>
-		<p class="description"></p>
-		<p class="price">0 <span class="">РУБ.</span></p>
-	  </div>
-	  <div class="card">
-	    <img src="img/img-barbershop.jpg" weight="360" height="576" alt="img-barbershop">
-		<h1 class="title"><a href="#">Barbershop</a></h1>
-		<p class="description"></p>
-		<p class="price">0 <span class="">РУБ.</span></p>
-	  </div>
-	  <div class="card">
-	    <img src="img/img-mishka.jpg" weight="360" height="576" alt="img-mishka">
-		<h1 class="title"><a href="#">Mishka</a></h1>
-		<p class="description"></p>
-		<p class="price">0 <span class="">РУБ.</span></p>
-	  </div>
-	  <div class="card">
-	    <img src="img/img-aplus.jpg" weight="360" height="576" alt="img-aplus">
-		<h1 class="title"><a href="#">Aplus</a></h1>
-		<p class="description"></p>
-		<p class="price">0 <span class="">РУБ.</span></p>
-	  </div>
-	  <div class="card">
-	    <img src="img/img-kvast.jpg" weight="360" height="576" alt="img-kvast">
-		<h1 class="title"><a href="#">Kvast</a></h1>
-		<p class="description"></p>
-		<p class="price">0 <span class="">РУБ.</span></p>
-	  </div>
-	</div>
-	<div class="btn">
-	  <p>
-	    <a href="#">1</a>
-		<a href="#">2</a>
-		<a href="#">3</a>
-		<a href="#">Следующий</a>
-	  </p>
-	</div>
-	<iframe src="img/maps.jpg" width="1440" height="416">
-	</iframe>
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-	  <section class="footer-social">
-	    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-		<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-		<a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
-	  </section>
-	  <section class="footer-partners">
-	    <b class="partners-name">Давайте дружить, это выгодно!</b>
-		<p>Скидка 10% для друзей из социальных сетей.</p>
-	  </section>
-	</div>
-  </footer>
-</body>
+		<h1>Магазин готовых шаблонов</h1>
+		<section class="filtr">
+			<h2 class="visually-hidden"></h2>
+			<!-- Тут будет форма -->
+		</section>
+
+  	<section class="sort">
+	    <h2>Сортировать:</h2>
+	      <p class="sort-list">
+  	    <a href="#">По цене</a>
+		    <a href="#">По типу</a>
+				<a href="#">По названию</a>
+		</section>
+
+		<section class="catalog">
+				<h2 class="visually-hidden">Список макетов</h2>
+				<ul class="catalog-list">
+					<li class="catalog-item">
+						<h3>
+							<a href="#">Sedona</a>
+						</h3>
+						<p class="catalog-item-image">
+							<a href="#">
+									<img src="img/img-sedona.jpg" weight="360" height="576" alt="Sedona">
+							</a>
+						</p>
+						<p class="description">Информационный сайт для туристов</p>
+						<p class="catalog-item-price">
+							<b>9900 Р</b>
+							<a class="botton" href="#"></a>
+						</p>
+					</li>
+					<li class="catalog-item">
+						<h3>
+							<a href="#">Pink</a>
+						</h3>
+						<p class="catalog-item-image">
+							<a href="#">
+									<img src="img/img-pink.jpg" weight="360" height="576" alt="Pink">
+							</a>
+						</p>
+						<p class="description">Приложение для общения</p>
+						<p class="catalog-item-price">
+							<b>0 Р</b>
+							<a class="botton" href="#"></a>
+						</p>
+					</li>
+					<li class="catalog-item">
+						<h3>
+							<a href="#">Mishka</a>
+						</h3>
+						<p class="catalog-item-image">
+							<a href="#">
+									<img src="img/img-mishka.jpg" weight="360" height="576" alt="Mishka">
+							</a>
+						</p>
+						<p class="description">Милые штуки ручной работы для дома</p>
+						<p class="catalog-item-price">
+							<b>0 Р</b>
+							<a class="botton" href="#"></a>
+						</p>
+					</li>
+					<li class="catalog-item">
+						<h3>
+							<a href="#">Aplus</a>
+						</h3>
+						<p class="catalog-item-image">
+							<a href="#">
+									<img src="img/img-aplus.jpg" weight="360" height="576" alt="Aplus">
+							</a>
+						</p>
+						<p class="description">Приложение для общения</p>
+						<p class="catalog-item-price">
+							<b>0 Р</b>
+							<a class="botton" href="#"></a>
+						</p>
+					</li>
+					<li class="catalog-item">
+						<h3>
+							<a href="#">Kvast</a>
+						</h3>
+						<p class="catalog-item-image">
+							<a href="#">
+									<img src="img/img-kvast.jpg" weight="360" height="576" alt="Kvast">
+							</a>
+						</p>
+						<p class="description">Крафтовый квас всему голова</p>
+						<p class="catalog-item-price">
+							<b>0 Р</b>
+							<a class="botton" href="#"></a>
+						</p>
+					</li>
+		</section>
+		
+		<ul class="pagination-list">
+			<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+			<li class="pagination-item"><a href="#">2</a></li>
+			<li class="pagination-item"><a href="#">3</a></li>
+			<li class="pagination-item"><a href="#">Следующая</a></li>
+		</ul>
+
+		<section class="contacts">
+			<h2 class="visually-hidden">Контактная информация</h2>
+			<p>Nerd's design studio<br>
+				191186, Санк-Петербург,<br>
+				ул. Б. Конюшенная, д. 19/8<br>
+				тел. +7 (812) 275-75-75
+			</p>
+			<a class="button" href="contacts.html">Напишите нам</a>
+		</section>
+	</main>
+		<footer class="main-footer">
+			<div class="footer-social">
+				<ul>
+					<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+					<li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+					<li><a class="social-btn social-btn-inst" href="#">Инстаграмм</a></li>
+			</div>
+			<div class="footer-partners">
+				<b class="partners-name">Давайте дружить, это выгодно!</b>
+				<p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</footer>
+	</body>
 </html>
