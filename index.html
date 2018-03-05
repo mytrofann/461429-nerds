@@ -6,30 +6,40 @@
   </head>
   <body>
     <header class="main-header">
-			<a class="main-header-logo">
-				<img src="img/index-logo.png" width="368" height="204" alt="Nerd's">
-			</a>
 	    <nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/index-logo.png" width="368" height="204" alt="Nerd's">
+				</a>
 	      <ul class="site-navigation">
-		      <li><a href="studio.html">Студия</a></li>
-		      <li><a href="clients.html">Клиенты</a></li>
-		      <li><a href="shop.html">Магазин</a></li>
-		      <li><a href="contacts.html">Контакты</a></li>
+		      <li class="site-navigation-item"><a href="#">Студия</a></li>
+		      <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+		      <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+		      <li class="site-navigation-item"><a href="#">Контакты</a></li>
 				</ul>
-				<ul class="basket-block">
+				<ul class="second-nav">
 					<li><a class="basket" href="#">Корзина</a></li>
 				</ul>
 			</nav>
 			<div class="slider">
 				<div class="slider-item">
 					<b class="slider-name">Долго, дорого, скурпулезно.</b>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<p class="slider-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 					<a class="button" href="web_sites.html">Узнать больше</a>
+				</div>
+				<div class="slider-item">
+					<b class="slider-name">Любим математику как никто другой.</b>
+					<p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a class="button" href="#">Узнать больше</a>
+				</div>
+				<div class="slider-item">
+					<b class="slider-name">Только ночь, только хардкор.</b>
+					<p class="slider-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<a class="button" href="#">Узнать больше</a>
 				</div>
 			</div>
     </header>
-  <main class="container">
-		<h1 class="visually-hidden">Nerd's</h1>
+  <main>
+		<h1 class="visually-hidden">Веб-студия Nerd's</h1>
 
 		<section class="services">
 			<h2 class="visually-hidden">Преимущества</h2>
@@ -37,33 +47,33 @@
 				<li class="services-item">
 				  <img src="web_sites.jpg" alt="Веб-сайты">
 				  <h2 class="services-name">Веб-сайты</h2>
-				  <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a class="button" href="web_sites.html">Заказать</a>
+				  <p class="services-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="button" href="#">Заказать</a>
 				</li>
 			  <li class="services-item">.
 			  	<img src="apps.jpg" alt="Приложения">
 				  <h2 class="services-name">Приложения</h2>
-			  	<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-			  	<a class="button" href="apps.html">Заказать</a>
+			  	<p class="services-description">Покорите топ-10 приложений в AppStore и Google Play</p>
+			  	<a class="button" href="#">Заказать</a>
 				</li>
 			  <li class="services-item">.
 				  <img src="presentations.jpg" alt="Презентации">
 				  <h2 class="services-name">Презентации</h2>
-				  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-				  <a class="button" href="presentations.html">Заказать</a>
+				  <p class="services-description">Вы даже не подозреваете, насколько вы изумительны!</p>
+				  <a class="button" href="#">Заказать</a>
 				</li>
 			</ul>
 		</section>
 
 		<section class="abouth">
 			<h2 class="visually-hidden">О нас</h2>
-			<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-		  <p>Исповедуем принципи минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			<b class="abouth-expression">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+		  <p class="abouth-item">Исповедуем принципи минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 		  <p class="list-name">Выполняем заказы на разработку:</p>
-		  <ul>
-		    <li>Веб-сайтов любой сложности</li>
-		    <li>Мобильных приложений для iOS и Android</li>
-		    <li>Слайдшоу и видео для корпоративных презентаций</li>
+		  <ul class="list-servises">
+		    <li class="list-servises-item">Веб-сайтов любой сложности</li>
+		    <li class="list-servises-item">Мобильных приложений для iOS и Android</li>
+		    <li class="list-servises-item">Слайдшоу и видео для корпоративных презентаций</li>
 			</ul>
 		</section>
 
@@ -71,18 +81,14 @@
 			<h2 class="visually-hidden">Наша статистика</h2>
 			<img src="#" alt="">
 			<p	class="list-name">С 2004 года любим точность во всем:</p>
-			<table>
-				<tr>
-				  <th>146%</th>
-				  <th>100%</th>
-					<th>50%</th>
-				</tr>
-				<tr>
-			  	<td>Уровень самоотдачи</td>
-				  <td>Соблюдение сроков</td>
-					<td>Минимальная предоплата</td>
-				</tr>
-			</table>
+			<ul class="list-features">
+				<li class="list-features-percent">146%</li>
+				<li class="list-features-percent">100%</li>
+				<li class="list-features-percent">50%</li>
+			  <li class="list-features-item">Уровень самоотдачи</li>
+				<li class="list-features-item">Соблюдение сроков</li>
+				<li class="list-features-item">Минимальная предоплата</li>
+			</ul>
 		</section>
 
 		<section class="clients">
@@ -95,22 +101,27 @@
 			</ul>
 		</section>
 
-		<section class="contacts">
-			<h2 class="visually-hidden">Контактная информация</h2>
-			<p>Nerd's design studio<br>
-				191186, Санк-Петербург,<br>
-				ул. Б. Конюшенная, д. 19/8<br>
-				тел. +7 (812) 275-75-75
-			</p>
-			<a class="button" href="contacts.html">Напишите нам</a>
+		<section class="maps">
+			<h2 class="visually-hidden">Карта проезда</h2>
+			<img src="img/maps.jpg" alt="Карта проезда">
+			<section class="contacts">
+				<h2 class="visually-hidden">Контактная информация</h2>
+				<p>Nerd's design studio<br>
+					191186, Санк-Петербург,<br>
+					ул. Б. Конюшенная, д. 19/8<br>
+					тел. +7 (812) 275-75-75
+				</p>
+				<a class="button" href="contacts.html">Напишите нам</a>
+				</section>
 		</section>
+
 	</main>
     <footer class="main-footer">
 	  	<div class="footer-social">
 				<ul>
-					<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-			    <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-		    	<li><a class="social-btn social-btn-inst" href="#">Инстаграмм</a></li>
+					<li  class="social-button"><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+			    <li class="social-button"><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+		    	<li class="social-button"><a class="social-btn social-btn-inst" href="#">Инстаграмм</a></li>
 			</div>
 		  <div class="footer-partners">
 		  	<b class="partners-name">Давайте дружить, это выгодно!</b>
