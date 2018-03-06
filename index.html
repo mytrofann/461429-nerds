@@ -8,7 +8,7 @@
     <header class="main-header">
 	    <nav class="main-navigation">
 				<a class="main-header-logo">
-					<img src="img/index-logo.png" width="368" height="204" alt="Nerd's">
+					<img class="logo" src="img/index-logo.png" width="368" height="204" alt="Nerd's">
 				</a>
 	      <ul class="site-navigation">
 		      <li class="site-navigation-item"><a href="#">Студия</a></li>
@@ -17,7 +17,7 @@
 		      <li class="site-navigation-item"><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="second-nav">
-					<li><a class="basket" href="#">Корзина</a></li>
+					<li class="second-nav-item"><a class="basket-link" href="#">Корзина</a></li>
 				</ul>
 			</nav>
 			<div class="slider">
@@ -45,19 +45,19 @@
 			<h2 class="visually-hidden">Преимущества</h2>
 			<ul class="services-list">
 				<li class="services-item">
-				  <img src="web_sites.jpg" alt="Веб-сайты">
+				  <img class="services-img" src="web_sites.jpg" alt="Веб-сайты">
 				  <h2 class="services-name">Веб-сайты</h2>
 				  <p class="services-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 					<a class="button" href="#">Заказать</a>
 				</li>
 			  <li class="services-item">.
-			  	<img src="apps.jpg" alt="Приложения">
+			  	<img class="services-img" src="apps.jpg" alt="Приложения">
 				  <h2 class="services-name">Приложения</h2>
 			  	<p class="services-description">Покорите топ-10 приложений в AppStore и Google Play</p>
 			  	<a class="button" href="#">Заказать</a>
 				</li>
 			  <li class="services-item">.
-				  <img src="presentations.jpg" alt="Презентации">
+				  <img class="services-img" src="presentations.jpg" alt="Презентации">
 				  <h2 class="services-name">Презентации</h2>
 				  <p class="services-description">Вы даже не подозреваете, насколько вы изумительны!</p>
 				  <a class="button" href="#">Заказать</a>
@@ -65,10 +65,10 @@
 			</ul>
 		</section>
 
-		<section class="abouth">
+		<section class="about">
 			<h2 class="visually-hidden">О нас</h2>
-			<b class="abouth-expression">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-		  <p class="abouth-item">Исповедуем принципи минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			<b class="about-text-bold">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+		  <p class="about-text">Исповедуем принципи минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 		  <p class="list-name">Выполняем заказы на разработку:</p>
 		  <ul class="list-servises">
 		    <li class="list-servises-item">Веб-сайтов любой сложности</li>
@@ -79,7 +79,7 @@
 
 		<section class="about-statistics">
 			<h2 class="visually-hidden">Наша статистика</h2>
-			<img src="#" alt="">
+			<img class="about-statistics-img" src="#" alt="">
 			<p	class="list-name">С 2004 года любим точность во всем:</p>
 			<ul class="list-features">
 				<li class="list-features-percent">146%</li>
@@ -94,10 +94,10 @@
 		<section class="clients">
 			<h2 class="visually-hidden">Наши клиенты</h2>
 			<ul class="clients-list">
-				<li class="clients-item"><a href="clients.html"><img src="htmlacademy.jpg" alt="HTMLAcademy"></a></li>
-				<li class="clients-item"><a href="clients.html"><img src="borodinski.jpg" alt="Borodinsky"></a></li>
-				<li class="clients-item"><a href="clients.html"><img src="pink.jpg" alt="Pink"></a></li>
-				<li class="clients-item"><a href="clients.html"><img src="mishka.jpg" alt="Mishka"></a></li>
+				<li class="clients-item"><a class="clients-item-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="clients-item-img" src="htmlacademy.jpg" alt="HTMLAcademy"></a></li>
+				<li class="clients-item"><a class="clients-item-link" href="clients.html"><img class="clients-item-img" src="borodinski.jpg" alt="Borodinsky"></a></li>
+				<li class="clients-item"><a class="clients-item-link" href="clients.html"><img class="clients-item-img" src="pink.jpg" alt="Pink"></a></li>
+				<li class="clients-item"><a class="clients-item-link" href="clients.html"><img class="clients-item-img" src="mishka.jpg" alt="Mishka"></a></li>
 			</ul>
 		</section>
 
@@ -106,7 +106,7 @@
 			<img src="img/maps.jpg" alt="Карта проезда">
 			<section class="contacts">
 				<h2 class="visually-hidden">Контактная информация</h2>
-				<p>Nerd's design studio<br>
+				<p class="adress">Nerd's design studio<br>
 					191186, Санк-Петербург,<br>
 					ул. Б. Конюшенная, д. 19/8<br>
 					тел. +7 (812) 275-75-75
@@ -118,14 +118,14 @@
 	</main>
     <footer class="main-footer">
 	  	<div class="footer-social">
-				<ul>
-					<li  class="social-button"><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-			    <li class="social-button"><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-		    	<li class="social-button"><a class="social-btn social-btn-inst" href="#">Инстаграмм</a></li>
+				<ul class="social-button">
+					<li class="social-button-item"><a class="social-button-vk" href="#">Вконтакте</a></li>
+			    <li class="social-button-item"><a class="social-button-btn-fb" href="#">Фейсбук</a></li>
+		    	<li class="social-button-item"><a class="social-button-inst" href="#">Инстаграмм</a></li>
 			</div>
-		  <div class="footer-partners">
-		  	<b class="partners-name">Давайте дружить, это выгодно!</b>
-		  	<p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+		  <div class="footer-text">
+		  	<b class="footer-text-bold">Давайте дружить, это выгодно!</b>
+		  	<p class="footer-text-sale">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 	  </footer>
 	</body>

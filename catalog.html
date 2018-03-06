@@ -8,7 +8,7 @@
     <header class="main-header">
 	    <nav class="main-navigation">
 			<a class="main-header-logo">
-				<img src="img/index-logo.png" width="368" height="204" alt="Nerd's">
+				<img class="logo" src="img/index-logo.png" width="368" height="204" alt="Nerd's">
 			</a>
 	      <ul class="site-navigation">
 		      <li class="site-navigation-item"><a href="#">Студия</a></li>
@@ -17,101 +17,106 @@
 		      <li class="site-navigation-item"><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="second-nav">
-					<li><a class="basket" href="#">Корзина</a></li>
+					<li class="second-nav-item"><a class="basket-link" href="#">Корзина</a></li>
 				</ul>
 			</nav>
     </header>
   <main>
-		<h1>Магазин готовых шаблонов</h1>
+		<h1 class="header-category">Магазин готовых шаблонов</h1>
 		<section class="filtr">
-			<h2 class="visually-hidden"></h2>
+			<h2 class="visually-hidden">Фильтр</h2>
 			<!-- Тут будет форма -->
 		</section>
 
   	<section class="sort">
-	    <h2>Сортировать:</h2>
-	      <p class="sort-list">
-  	    <a href="#">По цене</a>
-		    <a href="#">По типу</a>
-				<a href="#">По названию</a>
+	    <h2 class="header-shorts">Сортировать:</h2>
+	        <ul class="sort-list">
+  	          <li class="sort-list-item"><a href="#">По цене</a></li>
+			  <li class="sort-list-item"><a href="#">По типу</a>
+			  <li class="sort-list-item"><a href="#">По названию</a>
+			</ul>
+			<ul class="sort-button">
+			  <li class="sort-button-item"><a href="#">1</a>
+			  <li class="sort-button-item"><a href="#">2</a>
+			  </ul>
 		</section>
 
 		<section class="catalog">
-				<h2 class="visually-hidden">Список макетов</h2>
+				<h3 class="visually-hidden">Список макетов</h3>
 				<ul class="catalog-list">
 					<li class="catalog-item">
-						<h3>
-							<a href="#">Sedona</a>
+						<h3 class="catalog-item-name">
+							<a  class="catalog-item-link" href="#">Sedona</a>
 						</h3>
 						<p class="catalog-item-image">
-							<a href="#">
-									<img src="img/img-sedona.jpg" weight="360" height="576" alt="Sedona">
+							<a class="catalog-item-image-link" href="#">
+									<img class="catalog-item-img" src="img/img-sedona.jpg" weight="360" height="576" alt="Sedona">
 							</a>
 						</p>
 						<p class="description">Информационный сайт для туристов</p>
 						<p class="catalog-item-price">
-							<b>9900 Р</b>
-							<a class="botton" href="#"></a>
+							<b class="price">9900 Р</b>
+							<a class="button" href="#"></a>
 						</p>
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="#">Pink</a>
+						<h3 class="catalog-item-name">
+							<a  class="catalog-item-link" href="#">Pink</a>
 						</h3>
 						<p class="catalog-item-image">
-							<a href="#">
-									<img src="img/img-pink.jpg" weight="360" height="576" alt="Pink">
+							<a class="catalog-item-image-link" href="#">
+									<img class="catalog-item-img" src="img/img-pink.jpg" weight="360" height="576" alt="Pink">
 							</a>
 						</p>
 						<p class="description">Приложение для общения</p>
 						<p class="catalog-item-price">
-							<b>0 Р</b>
-							<a class="botton" href="#"></a>
+							<b class="price">0 Р</b>
+							<a class="button" href="#"></a>
 						</p>
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="#">Mishka</a>
+						<h3 class="catalog-item-name">
+							<a class="catalog-item-link" href="#">Mishka</a>
 						</h3>
 						<p class="catalog-item-image">
-							<a href="#">
-									<img src="img/img-mishka.jpg" weight="360" height="576" alt="Mishka">
+							<a class="catalog-item-image-link" href="#">
+									<img class="catalog-item-img" src="img/img-mishka.jpg" weight="360" height="576" alt="Mishka">
 							</a>
 						</p>
 						<p class="description">Милые штуки ручной работы для дома</p>
 						<p class="catalog-item-price">
-							<b>0 Р</b>
-							<a class="botton" href="#"></a>
+							<b class="price">0 Р</b>
+							<a class="button" href="#"></a>
 						</p>
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="#">Aplus</a>
+						<h3 class="catalog-item-name">
+							<a class="catalog-item-link" href="#">Aplus</a>
 						</h3>
 						<p class="catalog-item-image">
-							<a href="#">
-									<img src="img/img-aplus.jpg" weight="360" height="576" alt="Aplus">
+							<a class="catalog-item-image-link" href="#">
+									<img class="catalog-item-img" src="img/img-aplus.jpg" weight="360" height="576" alt="Aplus">
 							</a>
 						</p>
 						<p class="description">Приложение для общения</p>
 						<p class="catalog-item-price">
-							<b>0 Р</b>
-							<a class="botton" href="#"></a>
+							<b class="price">0 Р</b>
+							<a class="button" href="#"></a>
 						</p>
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="#">Kvast</a>
+						<h3 class="catalog-item-name">
+							<a class="catalog-item-link" href="#">Kvast</a>
 						</h3>
 						<p class="catalog-item-image">
-							<a href="#">
-									<img src="img/img-kvast.jpg" weight="360" height="576" alt="Kvast">
+							<a class="catalog-item-image-link" href="#">
+									<img class="catalog-item-img" src="img/img-kvast.jpg" weight="360" height="576" alt="Kvast">
 							</a>
 						</p>
 						<p class="description">Крафтовый квас всему голова</p>
 						<p class="catalog-item-price">
-							<b>0 Р</b>
-							<a class="botton" href="#"></a>
+							<b class="price">0 Р</b>
+							<a class="button" href="#"></a>
 						</p>
 					</li>
 		</section>
@@ -125,7 +130,7 @@
 
 		<section class="contacts">
 			<h2 class="visually-hidden">Контактная информация</h2>
-			<p>Nerd's design studio<br>
+			<p class="adress">Nerd's design studio<br>
 				191186, Санк-Петербург,<br>
 				ул. Б. Конюшенная, д. 19/8<br>
 				тел. +7 (812) 275-75-75
@@ -135,14 +140,14 @@
 	</main>
 		<footer class="main-footer">
 			<div class="footer-social">
-				<ul>
-					<li class="social-button"><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-					<li class="social-button"><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-					<li class="social-button"><a class="social-btn social-btn-inst" href="#">Инстаграмм</a></li>
+				<ul class="social-button">
+					<li class="social-button-item"><a class="social-button-vk" href="#">Вконтакте</a></li>
+					<li class="social-button-item"><a class="social-button-fb" href="#">Фейсбук</a></li>
+					<li class="social-button-item"><a class="social-button-inst" href="#">Инстаграмм</a></li>
 			</div>
-			<div class="footer-partners">
-				<b class="partners-name">Давайте дружить, это выгодно!</b>
-				<p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+			<div class="footer-text">
+				<b class="footer-text-bold">Давайте дружить, это выгодно!</b>
+				<p class="footer-text-sale">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</footer>
 	</body>
