@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Nerd's</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -14,10 +15,12 @@
         <li class="site-navigation-item"><a class="site-navigation-link" href="#">Студия</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Клиенты</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="second-nav">
-          <li class="second-nav-item"><a class="basket-link" href="#">Корзина</a></li>
+        <ul class="user-navigation">
+          <li class="user-navigation-item">
+            <a class="basket-link" href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
       <div class="slider">
@@ -103,7 +106,7 @@
 
     <section class="maps">
       <h2 class="visually-hidden">Карта проезда</h2>
-      <img class="maps-img" src="img/maps.jpg" alt="Карта проезда">
+      <img class="maps-img" src="img/maps.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts-adress">Nerd's design studio<br>
@@ -112,7 +115,28 @@
           тел. +7 (812) 275-75-75
         </p>
         <a class="button" href="contacts.html">Напишите нам</a>
-        </section>
+      </section>
+    </section>
+
+    <section class="modal modal-map">
+      <h1>Напишите нам</h1>
+      <form class="user" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="user-name">Ваше имя:</label></br>
+          <input type="text" id="user-name" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label></br>
+          <input type="email" id="user-email" name="email" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="user-text">Текст письма:</label></br>
+          <textarea id="user-text" name="text" placeholder="В свободной форме">
+          </textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </main>
