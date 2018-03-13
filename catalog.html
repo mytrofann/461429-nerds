@@ -29,36 +29,56 @@
 
     <section class="filter">
       <h2 class="visually-hidden">Фильтр</h2>
-      <h2 class="header-cost">Соимость:</h2>
+      <h3 class="header-filter">Соимость:</h3>
       <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
         <p class="filter-wrapper">
           <label class="filter-item-min" for="filter-cost-min">От
             <input class="filter-item-name cost" type="text" checked id="filter-cost-min" name="min" placeholder="0">
-          </label></br>
+          </label>
           <label class="filter-item-max" for="filter-cost-max">До
             <input class="filter-item-name cost" type="text" checked id="filter-cost-max" name="max" placeholder="15 000">
           </label>
         </p>
+        <h3 class="header-filter">Сетка:</h3>
         <p class="filter-wrapper">
-          <label class="filter-item" for="filter-grid">Сетка:</label></br>
-          <input class="filter-item-name grid" type="radio" checked id="filter-grid" name="grid" value="Адаптивная">Адаптивная</br>
-          <input class="filter-item-name grid" type="radio" id="filter-grid" name="grid" value="Фиксированная">Фиксированная</br>
-          <input class="filter-item-name grid" type="radio" id="filter-grid" name="grid" value="Резиновая">Резиновая
+          <input class="filter-item-name grid" type="radio" checked id="filter-grid-ad" name="grid" value="Адаптивная">
+          <label class="filter-item" for="filter-grid-ad">Адаптивная</label>
         </p>
         <p class="filter-wrapper">
-          <label class="filter-item" for="filter-features">Особенности:</label></br>
-          <input class="filter-item-name features" type="checkbox" checked id="filter-features" name="grid" value="Слайдер">Слайдер</br>
-          <input class="filter-item-name features" type="checkbox" id="filter-features" name="grid" value="Блок преимуществ">Блок преимуществ</br>
-          <input class="filter-item-name features" type="checkbox" checked id="filter-features" name="grid" value="Новости">Новости</br>
-          <input class="filter-item-name features" type="checkbox" id="filter-features" name="grid" value="Галерея">Галерея</br>
-          <input class="filter-item-name features" type="checkbox" id="filter-features" name="grid" value="Корзина">Корзина
+          <input class="filter-item-name grid" type="radio" id="filter-grid-fix" name="grid" value="Фиксированная">
+          <label class="filter-item" for="filter-grid-fix">Фиксированная</label>
+        </p>
+        <p class="filter-wrapper">
+          <input class="filter-item-name grid" type="radio" id="filter-grid-rub" name="grid" value="Резиновая">
+          <label class="filter-item" for="filter-grid-rub">Резиновая</label>
+        </p>
+        <h3 class="header-filter">Особенности:</h3>
+        <p class="filter-wrapper">
+          <input class="filter-item-name features" type="checkbox" checked id="filter-features-slider" name="grid" value="Слайдер">
+          <label class="filter-item" for="filter-features-slider">Слайдер</label>
+        </p>
+        <p class="filter-wrapper">
+          <input class="filter-item-name features" type="checkbox" id="filter-features-advantages" name="grid" value="Блок преимуществ">
+          <label class="filter-item" for="filter-features-advantages">Блок преимуществ</label>
+        </p>
+        <p class="filter-wrapper">
+          <input class="filter-item-name features" type="checkbox" checked id="filter-features-news" name="grid" value="Новости">
+          <label class="filter-item" for="filter-features-news">Новости</label>
+        </p>
+        <p class="filter-wrapper">
+          <input class="filter-item-name features" type="checkbox" id="filter-features-galery" name="grid" value="Галерея">
+          <label class="filter-item" for="filter-features-galery">Галерея</label>
+        </p>
+        <p class="filter-wrapper">
+          <input class="filter-item-name features" type="checkbox" id="filter-features-basket" name="grid" value="Корзина">
+          <label class="filter-item" for="filter-features-basket">Корзина</label>
         </p>
         <button class="button" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="sort">
-      <h2 class="header-shorts">Сортировать:</h2>
+      <h3 class="header-shorts">Сортировать:</h3>
       <ul class="sort-list">
         <li class="sort-list-item"><a class="sort-list-link" href="#">По цене</a></li>
         <li class="sort-list-item"><a class="sort-list-link" href="#">По типу</a>
@@ -188,18 +208,18 @@
 
     <section class="modal modal-map">
       <h2 class="modal-header">Напишите нам</h2>
-      <form class="user" method="post" action="https://echo.htmlacademy.ru">
+      <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
         <p>
-          <label for="user-name">Ваше имя:</label></br>
-          <input type="text" id="user-name" name="name" placeholder="Представьтесь, пожалуйста">
+          <label for="modal-form-name">Ваше имя:</label>
+          <input type="text" id="modal-form-name" name="name" placeholder="Представьтесь, пожалуйста">
         </p>
         <p>
-          <label for="user-email">Ваш e-mail:</label></br>
-          <input type="email" id="user-email" name="email" placeholder="Для отправки ответа">
+          <label for="modal-form-email">Ваш e-mail:</label>
+          <input type="email" id="modal-form-email" name="email" placeholder="Для отправки ответа">
         </p>
         <p>
-          <label for="user-text">Текст письма:</label></br>
-          <textarea id="user-text" name="text" placeholder="В свободной форме">
+          <label for="modal-form-text">Текст письма:</label>
+          <textarea id="modal-form-text" name="text" placeholder="В свободной форме">
           </textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
