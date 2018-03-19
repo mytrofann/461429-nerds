@@ -1,5 +1,291 @@
 body {
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding:0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: none;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: #dd575b;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation a {
+  font-size: 16px;
+  line-height: 30px;  
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-header-logo img:hover,
+.main-header-logo img:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo img:active {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #a6a6a6;
+}
+
+.services-list  {
+  list-style: none;
+}
+.slider-name {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-description {
+  color: #283136;
+}
+
+.list-features  {
+  list-style: none;
+}
+
+.services-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.services-description {
+  color: #283136;
+}
+
+.clients-list {
+  list-style: none;
+}
+
+.clients-item-link img{
+  opacity: 0.2;
+}
+
+.clients-item-link img:hover,
+.clients-item-link img:focus {
+  opacity: 1;
+}
+
+.clients-item-link img:active {
+  opacity: 0.1;
+}
+.about-text-bold {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-text {
+  color: #283136;
+}
+
+.list-servises-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-servises {
+  color:#283136;
+}
+
+.list-features-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-features-percent {
+  font-size: 45px;
+  line-height: 10,06px;
+}
+.list-features-item {
+  font-weight: 18px;
+  color:#283136;
+}
+
+.contacts-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contacts-adress {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.social-button {
+  list-style: none;
+}
+
+.footer-text-bold {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-text-sale {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.modal-header {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.inner-page {  
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
+}
+
+.header-category {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.header-filter {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.header-shorts {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-list {  
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-list a:hover,
+.sort-list a:focus,
+.sort-button a:hover,
+.sort-button a:focus {
+  color: #8d8d8d;
+}
+
+.sort-list a:active,
+.sort-button a:active {
+  color: #000000;
+}
+
+.sort-list-item a {
+  color: #cacaca;
+}
+
+.sort-button {
+  list-style: none;
+}
+
+.sort-button {  
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-button-item a {
+  color: #cacaca;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-img {
+
+  border: 1px solid #e9e9e9;
+}
+
+.catalog-item-name {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-item-name a {
+  color: #000000;
+}
+
+.catalog-item-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.pagination-list  {
+  list-style: none;
+}
+
+.pagination-list {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: #959595;
+  background-color: #eeeeee;
 }
 
 .visually-hidden {
@@ -12,3 +298,5 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
