@@ -171,7 +171,8 @@ a {
   text-transform: uppercase;
 }
 
-.contacts-adress {
+.contacts-adress,
+.contacts-tel {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
@@ -319,6 +320,195 @@ a {
   color: #959595;
   background-color: #eeeeee;
 }
+-----------------------------
+body {
+  min-width: 1440px;
+}
+
+.main-header {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding-top: 50px;
+}
+
+.header-wrappewr {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header-logo {
+  width: 162px;
+  height: 67px;
+}
+
+.site-navigation {
+  width: 760px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {  
+  margin: 0;
+  padding: 0 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services {
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item{
+  width: 300px;
+}
+
+.hr-1 {
+  width: 1160px;
+  border: none;
+  background-color: #eeeeee;
+  color: #eeeeee;
+  height: 2px;
+  margin-bottom: 40px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.about {
+  width: 760px;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.about-statistics {
+  width: 360px;
+}
+
+.hr-2 {
+  width: 1160px;
+  border: none;
+  background-color: #eeeeee;
+  color: #eeeeee;
+  height: 2px;
+  margin-bottom: 40px;
+}
+
+.clients {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.clients-list {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.hr-3 {
+  width: 1160px;
+  border: none;
+  background-color: #eeeeee;
+  color: #eeeeee;
+  height: 2px;
+  margin-bottom: 40px;
+}
+.modal-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.maps,
+.maps-img {
+  width: 1440px;
+}
+
+.contacts {
+  width: 218px;
+  border: 1px solid #000000;
+  margin-bottom: 80px;
+  padding: 47px 50px;
+}
+
+.contacts-adress {
+  margin-bottom: 15px;
+}
+
+.contacts-tel {
+  margin-bottom: 30px;
+}
+
+.modal {
+  width: 960px;
+  height: 590px;
+  border: 1px solid #000000;
+  box-shadow: -5px 30px 20px 10px rgb(0,1,1,0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-footer {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 68px auto;
+  padding: 0 20px;
+}
+
+.social-button {
+  width: 260px;
+}
+
+.footer-text {
+  width: 860px;
+}
+
+
 
 .visually-hidden {
   position: absolute;
