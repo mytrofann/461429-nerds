@@ -20,6 +20,9 @@ a {
   vertical-align: middle;
   background-color: #fb565a;
   border: none;
+  font-size: 16px;
+  font-weight: 18px;
+  text-transform: uppercase;
 }
 
 .button:hover,
@@ -320,7 +323,19 @@ a {
   color: #959595;
   background-color: #eeeeee;
 }
------------------------------
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+-----Главная------------------------
 body {
   min-width: 1440px;
 }
@@ -331,13 +346,14 @@ body {
   padding-top: 50px;
 }
 
-.header-wrappewr {
+.header-wrapper {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .main-navigation {
+  width: 1160px;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -347,19 +363,26 @@ body {
 .main-header-logo {
   width: 162px;
   height: 67px;
+  margin: 0;
+  margin-right: 20px;
 }
 
 .site-navigation {
   width: 760px;
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
+  justify-content: flex-start;
+  margin: auto 20px;
+  padding: 0 160px;
+}
+
+.site-navigation-link {
+  margin-right: 45px;
 }
 
 .user-navigation {
   width: 160px;
-  margin: 0;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -375,23 +398,48 @@ body {
 }
 
 .services {
-  margin-bottom: 80px;
-  padding: 0 20px;
+  margin-bottom: 90px;
+  padding: 0;
 }
 
 .services-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .services-item{
   width: 300px;
+  margin: 0 20px;
+  padding-right: 60px;
+}
+
+.services-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.services-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.services-item:nth-child(4n) {
+  margin-left: 0;
+}
+
+.services-description {
+  margin-bottom: 40px;
+}
+
+.button {
+  padding: 16px 40px;
+  border-radius: 3px;
 }
 
 .hr-1 {
-  width: 1160px;
+  width: 1200px;
   border: none;
   background-color: #eeeeee;
   color: #eeeeee;
@@ -401,40 +449,107 @@ body {
 
 .index-columns {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  padding: 0 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+  padding: 0;
 }
 
-.about {
+.about {  
   width: 760px;
-  margin-top: 40px;
+  margin-top: 35px;
+  margin-right: 20px;
+  padding-right: 0px;
+}
+
+.about-text-bold {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.about-text {
+  margin-bottom: 39px;
+  padding: 0;
+}
+
+.list-servises {
+  margin: 0;
+  padding-left: 36px;
+}
+
+.list-servises-name {
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.list-servises-item {
+  line-height: 24px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
 .about-statistics {
   width: 360px;
+  margin-left: 20px;
+  padding: 0;
 }
 
+.about-statistics-img {
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.list-features-name {
+  margin-left: 14px;
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+
 .hr-2 {
-  width: 1160px;
+  width: 1200px;
   border: none;
   background-color: #eeeeee;
   color: #eeeeee;
   height: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .clients {
   margin-bottom: 40px;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .clients-list {
-  display: flex;  
-  justify-content: space-between;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
-  margin-right: 40px;
+  margin: 45px 0;  
+  padding: 0;
+  list-style: none;
+}
+
+.clients-item:nth-child(1) {
+  margin: 0;
+  padding: 0 20px 28px 30px;
+}
+
+.clients-item:nth-child(2) {
+  margin: 0;
+  padding: 0px 20px 40px 78px;
+}
+
+.clients-item:nth-child(3) {
+  margin: 0;
+  padding: 0px 0px 35px 80px;
+}
+
+.clients-item:nth-child(4) {
+  margin: 0;
+  padding: 0px 0px 35px 123px;
 }
 
 .hr-3 {
@@ -474,23 +589,10 @@ body {
 .modal {
   width: 960px;
   height: 590px;
+
   border: 1px solid #000000;
   box-shadow: -5px 30px 20px 10px rgb(0,1,1,0.25);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .main-footer {
   width: 1200px;
@@ -508,17 +610,70 @@ body {
   width: 860px;
 }
 
+------Каталог---------------------------------------------
 
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.container-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
+
+.filter {
+  width: 260px;
+}
+
+.sort {
+  width: 760px;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 30px;
+  margin-right: 40px;  
+  box-shadow: 1px solid rgb(0,1,1,0.1)
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+}
+/*
+.catalog-item:active {}
+*/
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.pagination-item {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
 
 
