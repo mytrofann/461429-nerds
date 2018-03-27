@@ -336,6 +336,15 @@ a {
   overflow: hidden;
 }
 
+.text-hide {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  text-indent: -500%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 -----Главная------------------------
 body {
   min-width: 1440px;
@@ -386,8 +395,20 @@ body {
   margin-left: 20px;
   padding: 0;
 }
-
-.slider {  
+/*
+.basket-link::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  width: 18px;
+  height: 18px;
+  background-image: url("img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+*/
+.slider {
   margin: 0;
   padding: 0 20px;
 }
@@ -702,6 +723,24 @@ body {
   width: 760px;
   display: flex;
   margin-bottom: 55px;
+}
+
+.sort-button-top {
+  border: 10px solid #000;
+  border-top: 0;
+  border-left-color: transparent;
+  border-left-width: 6px;
+  border-right-color: transparent;
+  border-right-width: 6px;
+}
+
+.sort-button-bottom {
+  border: 10px solid #000;
+  border-bottom: 0;
+  border-left-color: transparent;
+  border-left-width: 6px;
+  border-right-color: transparent;
+  border-right-width: 6px;
 }
 
 .header-shorts {
