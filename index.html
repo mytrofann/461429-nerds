@@ -11,53 +11,65 @@
 <body>
   <header class="main-header">
     <div class="header-wrapper">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img class="logo" src="img/nerds-logo.svg" width="162" height="67" alt="Nerd's">
-      </a>
-      <ul class="site-navigation">
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Студия</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Клиенты</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="catalog.html">Магазин</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="user-navigation-item">
-          <a class="basket-link" href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="slider">
-      <div class="slider-item">
-        <b class="slider-name">Долго, дорого, скурпулезно.</b>
-        <p class="slider-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <img class="slider-imag" src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
-        <a class="button" href="#">Узнать больше</a>
-      </div><!--
-        <div class="slider-item">
-          <b class="slider-name">Любим математику как никто другой.</b>
-          <p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <img class="slider-imag" src="img/slide2.png" width="663" height="430" alt="Слайдер 2">
-          <a class="button" href="#">Узнать больше</a>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img class="logo" src="img/nerds-logo.svg" width="162" height="67" alt="Nerd's">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Студия</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Клиенты</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation-item">
+            <a class="basket-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="slider">
+        <div class="container-new">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3 class="slider-name">Долго, дорого,
+                <br> скрупулезно.</h3>
+              <p class="slider-description">Математически выверенный дизайн
+                <br> для вашего сайта или мобильного приложения.</p>
+              <a class="button slider-item-button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3 class="slider-name">Любим математику как никто другой.</h3>
+              <p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="button slider-item-button" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3 class="slider-name">Только ночь,
+                <br> только хардкор.</h3>
+              <p class="slider-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="button slider-item-button" href="#">Узнать больше</a>
+            </li>
+          </ul>
         </div>
-      <div class="slider-item">
-        <b class="slider-name">Только ночь, только хардкор.</b>
-        <p class="slider-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <img class="slider-imag" src="img/slide3.png" width="759" height="411" alt="Слайдер 3">
-        <a class="button" href="#">Узнать больше</a>
-      </div>-->
-    </div>
-    </div>
+      </section>
   </header>
-  <main class="container">
+  <main class="container-main">
     <h1 class="visually-hidden">Веб-студия Nerd's</h1>
 
     <section class="services">
@@ -73,119 +85,132 @@
           <img class="services-img" src="img/apps.jpg" alt="Приложения">
           <h2 class="services-name">Приложения</h2>
           <p class="services-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button btn-apps" href="#">Заказать</a>
         </li>
         <li class="services-item">
           <img class="services-img" src="img/presentations.jpg" alt="Презентации">
           <h2 class="services-name">Презентации</h2>
           <p class="services-description">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button" href="#">Заказать</a>
-        </li>
-    </ul>
-    </section>
-<hr class="hr-1">
-
-<div class="index-columns">
-    <section class="about">
-      <h2 class="visually-hidden">О нас</h2>
-      <b class="about-text-bold">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-      <p class="about-text">Исповедуем принципи минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук,
-        как роботы.</p>
-      <p class="list-servises-name">Выполняем заказы на разработку:</p>
-      <ul class="list-servises">
-        <li class="list-servises-item">Веб-сайтов любой сложности</li>
-        <li class="list-servises-item">Мобильных приложений для iOS и Android</li>
-        <li class="list-servises-item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-    </section>
-
-    <section class="about-statistics">
-      <h2 class="visually-hidden">Наша статистика</h2>
-      <img class="about-statistics-img" src="img/nerds-illustration.jpg" alt="Nerd's статистика">
-      <p class="list-features-name">С 2004 года любим точность во всем:</p>
-      <ul class="list-features">
-      <li class="list-features-wrapper"><p class="list-features-percent">146%</p><p class="list-features-item">Уровень самоотдачи</p></li>
-      <li class="list-features-wrapper"><p class="list-features-percent">100%</p><p class="list-features-item">Соблюдение сроков</p></li>
-      <li class="list-features-wrapper"><p class="list-features-percent">50%</p><p class="list-features-item">Минимальная предоплата</p></li>
-    </ul>
-    </section>
-
-    <hr class="hr-2">
-    <section class="clients">
-      <h2 class="visually-hidden">Наши клиенты</h2>
-      <ul class="clients-list">
-        <li class="clients-item">
-          <a class="clients-item-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="clients-item-img" src="img/htmlacademy.png" width="199" height="68" alt="HTMLAcademy">
-          </a>
-        </li>
-        <li class="clients-item">
-          <a class="clients-item-link" href="clients.html">
-            <img class="clients-item-img" src="img/borodinski.png" width="209" height="90" alt="Borodinsky">
-          </a>
-        </li>
-        <li class="clients-item">
-          <a class="clients-item-link" href="clients.html">
-            <img class="clients-item-img" src="img/pink.png" width="185" height="52" alt="Pink">
-          </a>
-        </li>
-        <li class="clients-item">
-          <a class="clients-item-link" href="clients.html">
-            <img class="clients-item-img" src="img/mishka.png" width="173" height="84" alt="Mishka">
-          </a>
+          <a class="button btn-presentations" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    <hr class="hr-3">
+
+    <div class="index-columns">
+      <section class="about">
+        <h2 class="visually-hidden">О нас</h2>
+        <b class="about-text-bold">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <p class="about-text">Исповедуем принципи минимализма и чистоты. Ставим математический расчет
+          <br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="list-servises-name">Выполняем заказы на разработку:</p>
+        <ul class="list-servises">
+          <li class="list-servises-item">Веб-сайтов любой сложности</li>
+          <li class="list-servises-item">Мобильных приложений для iOS и Android</li>
+          <li class="list-servises-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
+
+      <section class="about-statistics">
+        <h2 class="visually-hidden">Наша статистика</h2>
+        <img class="about-statistics-img" src="img/nerds-illustration.jpg" alt="Nerd's статистика">
+        <p class="list-features-name">С 2004 года любим точность во всем:</p>
+        <ul class="list-features">
+          <li class="list-features-wrapper">
+            <p class="list-features-percent">146%</p>
+            <p class="list-features-item">Уровень самоотдачи</p>
+          </li>
+          <li class="list-features-wrapper">
+            <p class="list-features-percent">100%</p>
+            <p class="list-features-item">Соблюдение сроков</p>
+          </li>
+          <li class="list-features-wrapper">
+            <p class="list-features-percent">50%</p>
+            <p class="list-features-item">Минимальная предоплата</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="clients">
+        <h2 class="visually-hidden">Наши клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-item clients-item-one">
+            <a class="clients-item-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img class="clients-item-img" src="img/htmlacademy.png" width="199" height="68" alt="HTMLAcademy">
+            </a>
+          </li>
+          <li class="clients-item clients-item-two">
+            <a class="clients-item-link" href="clients.html">
+              <img class="clients-item-img" src="img/borodinski.png" width="209" height="90" alt="Borodinsky">
+            </a>
+          </li>
+          <li class="clients-item clients-item-three">
+            <a class="clients-item-link" href="clients.html">
+              <img class="clients-item-img" src="img/pink.png" width="185" height="52" alt="Pink">
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-item-link" href="clients.html">
+              <img class="clients-item-img" src="img/mishka.png" width="173" height="84" alt="Mishka">
+            </a>
+          </li>
+        </ul>
+      </section>
   </main>
 
   <div class="modal-wrapper">
     <section class="maps">
-        <h2 class="visually-hidden">Карта проезда</h2>
-        <img class="maps-img" src="img/maps.jpg" width="1140" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img class="maps-img" src="img/maps.jpg" width="1140" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <img class="maps-marker" src="img/map-marker.png" width="231" height="190" alt="ул. Большая Конюшенная 19/8">
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts-name">Nerd's design studio</p>
         <p class="contacts-adress">191186, Санк-Петербург,
           <br> ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
-        <a class="button" href="contacts.html">Напишите нам</a>
-      </section> 
+        <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
+        <a class="button btn-contacts" href="contacts.html">Напишите нам</a>
+      </section>
     </section>
 
-    <section class="modal modal-map">
+    <section class="modal">
       <h2 class="modal-header">Напишите нам</h2>
       <form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
-        <p>
-          <label for="modal-form-name">Ваше имя:</label>
-          <input type="text" id="modal-form-name" name="name" placeholder="Представьтесь, пожалуйста">
+        <p class="modal-form-data">
+          <label for="modal-form-name">Ваше имя:</label><br>
+          <input type="text" id="modal-form-name" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p>
-          <label for="modal-form-email">Ваш e-mail:</label>
-          <input type="email" id="modal-form-email" name="email" placeholder="Для отправки ответа">
+          <label for="modal-form-name">Ваш e-mail:</label><br>
+          <input type="email" id="modal-form-email" name="email" placeholder="email@example.com" required>
         </p>
         <p>
-          <label for="modal-form-text">Текст письма:</label>
-          <textarea id="modal-form-text" name="text" placeholder="В свободной форме">
+          <label for="modal-form-name">Текст письма:</label>
+          <textarea id="modal-form-text" name="text" rows="4" placeholder="В свободной форме">
           </textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-</div>
-  
+  </div>
+
   <footer class="main-footer">
     <div class="footer-social">
       <ul class="social-button">
         <li class="social-button-item">
-          <a class="social-button-vk" href="#">Вконтакте</a>
+          <a class="social-button-vk social-button-link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social-button-item">
-          <a class="social-button-btn-fb" href="#">Фейсбук</a>
+          <a class="social-button-fb social-button-link" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li class="social-button-item">
-          <a class="social-button-inst" href="#">Инстаграм</a>
+          <a class="social-button-inst social-button-link" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
     </div>
     <div class="footer-text">
