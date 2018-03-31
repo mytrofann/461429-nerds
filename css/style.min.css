@@ -287,10 +287,6 @@ a {
   color: #000000;
 }
 
-.sort-list-link-current a:not([href]) {
-  color: #000000;
-}
-
 .sort-button {
   list-style: none;
 }
@@ -356,10 +352,6 @@ a {
   background-color: #ffffff;
 }
 
-.pagination-link-current a:not([href]) {
-  background-color: #000000;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -394,13 +386,13 @@ body {
 }
 
 .header-wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .main-navigation {
-  width: 1160px;
+  max-width: 1160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +404,6 @@ body {
       align-self: flex-start;
   margin: 0 auto;
   margin-top: -2px;
-  padding: 0 20px;
 }
 
 .main-header-logo {
@@ -423,7 +414,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 162px;
+  max-width: 162px;
   height: 67px;
   margin: 0;
   margin-right: 138px;
@@ -449,6 +440,7 @@ body {
   margin: 0 20px;
   margin-top: 27px;
   padding-left: 40px;
+  padding-right: 100px;
 }
 
 .site-navigation-item {
@@ -476,13 +468,10 @@ body {
   pointer-events: none;
 }
 
-.site-navigation-current a:not([href]) {
-}
-
 .site-navigation-current::before {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 32px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -492,7 +481,7 @@ body {
 .user-navigation {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 160px;
+  max-width: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,6 +493,7 @@ body {
   margin-top: 27px;
   margin-left: 20px;
   padding: 0;
+  padding-left: 42px;
   list-style: none;
 }
 
@@ -686,7 +676,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -763,7 +753,7 @@ body {
 }
 
 .index-columns {
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,7 +770,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  width: 760px;
+  max-width: 760px;
   margin-top: 35px;
   margin-right: 20px;
   padding-right: 0px;
@@ -854,7 +844,7 @@ body {
 .list-features {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 360px;
+  max-width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,7 +862,7 @@ body {
 .list-features-wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 110px;
+  max-width: 110px;
   margin-right: 10px;
 }
 
@@ -906,7 +896,7 @@ body {
 .clients-list {
   margin: 0;
   padding: 0;
-  width: 1160px;
+  max-width: 1160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,7 +995,7 @@ body {
 
 .modal-wrapper,
 .inner-page .modal-wrapper {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
@@ -1062,7 +1052,7 @@ body {
   display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 960px;
+  max-width: 960px;
   -webkit-box-shadow: 0 15px 50px 15px rgb(0,1,1,0.35);
           box-shadow: 0 15px 50px 15px rgb(0,1,1,0.35);
   position: fixed;
@@ -1072,14 +1062,14 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 70px 100px;
-  padding-bottom: 80px;
+  padding: 66px 100px;
+  padding-bottom: 64px;
   z-index: 3;
 }
 
 .modal-header {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 40px;
 }
 
 .modal-form label {
@@ -1087,7 +1077,7 @@ body {
   font: inherit;
   line-height: 18px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .modal-close {
@@ -1133,7 +1123,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 360px;
-  padding: 10px 15px;
+  padding: 11px 15px;
   padding-right: 40px;
   font: inherit;
   color: #b1b1b1;
@@ -1146,11 +1136,21 @@ input:required {
   border: 2px solid #e74246;
 }
 
+.modal-form-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-form-wrapper:nth-child(3) {
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
 .modal-form textarea[id="modal-form-text"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 760px;
-  padding: 10px 15px;
+  padding: 11px 15px;
   padding-right: 40px;
   font: inherit;
   color: #b1b1b1;
