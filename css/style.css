@@ -349,6 +349,11 @@ a {
   box-sizing: border-box;
 }
 
+.sort-button-item-current a[href] {
+  pointer-events: none;
+  opacity: 1;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1390,6 +1395,13 @@ input:required {
   opacity: 1;
 }
 
+.filter-input-checkbox:focus + label,
+.filter-input-checkbox:focus + label::before,
+.filter-input-radio:focus + label,
+.filter-input-radio:focus + label::before {
+  outline: 2px solid #9dbff6;
+}
+
 .filter-input:disabled + label {
   color: #000000;
   opacity: 0.1;
@@ -1628,6 +1640,7 @@ input:required {
   display: block;
 }
 
+
 .cards-wrapper {
   display: none;
   box-sizing: border-box;
@@ -1646,6 +1659,10 @@ input:required {
   z-index: 2;
   overflow-y: scroll;
 }
+
+.cards-wrapper:focus {
+  display: block;
+ }
 
 .catalog-item:first-child .cards-wrapper {
   display: inline-block;
