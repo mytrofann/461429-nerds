@@ -995,9 +995,7 @@ body {
 
 .btn-contacts,
 .inner-page .btn-contacts  {
-  padding-top: 15px;
-  padding-left: 44px;
-  padding-right: 46px;
+  padding: 15px 44px 15px;
 }
 
 .modal {
