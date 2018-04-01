@@ -816,18 +816,24 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 360px;
+  margin: 0;
   margin-left: 20px;
   padding: 0;
 }
 
-.about-statistics-img {
-  margin-bottom: 13px;
+.list-features-name {
+  margin: 0;
+  margin-left: 13px;
+  margin-bottom: 58px;
   padding: 0;
+  padding-top: 244px;
+  background-image: url("../img/nerds-illustration.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 0px;
 }
 
-.list-features-name {
-  margin-left: 13px;
-  margin-bottom: 59px;
+.list-features-name p {
+  margin: 0;
   padding: 0;
 }
 
