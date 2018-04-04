@@ -2,8 +2,8 @@
   var popup = document.querySelector(".modal-login");
   var close = popup.querySelector(".modal-close");
   var form = popup.querySelector("form");
-  var login = popup.querySelector("[name=name]");
-  var password = popup.querySelector("[name=email]");
+  var login = popup.querySelector("[name=login]");
+  var email = popup.querySelector("[name=email]");
   
   var isStorageSupport = true;
   var storage = "";
@@ -20,7 +20,7 @@
     
     if (storage) {
       login.value = storage;
-      password.focus();
+      email.focus();
     } else {
       login.focus();
     }
@@ -33,7 +33,7 @@
   });
   
   form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
+    if (!login.value || !email.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
