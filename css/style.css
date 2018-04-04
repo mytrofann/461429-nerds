@@ -551,6 +551,14 @@ body {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: #606060;
+}
+
+.slider-controls label:focus {
+  background-color: #606060;
+}
+
 .slider-controls label::after {
   content: "";
   position: absolute;
@@ -575,18 +583,21 @@ body {
 }
 
 .slider-item:nth-child(1) {
+  background-color: #eeeeee;
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 12px;
 }
 
 .slider-item:nth-child(2) {
+  background-color: #eeeeee;
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
+  background-color: #eeeeee;
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
@@ -1864,4 +1875,109 @@ input:required {
   color: rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
