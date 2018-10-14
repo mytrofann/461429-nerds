@@ -4,6 +4,10 @@
 
 ---
 
+**Обратите внимание, что папка с исходными файлами — `source/`.**
+
+---
+
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/461429-sedona.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/461429-sedona
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/461429-sedona/dev-status.svg?style=flat-square
